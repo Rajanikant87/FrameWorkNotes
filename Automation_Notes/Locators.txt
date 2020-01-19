@@ -1,0 +1,40 @@
+Locators:
+
+>> ID
+>> name
+>> xpath
+>> CSS selector
+>> className
+>> linkText
+>> partial linkText
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CSS Syntax:
+
+1. tagname[attribute='value']
+ 
+2. tagnme[attribute # value]  or attribute # value  or # value ---> It contains ID
+
+3. tagname[attribute='value']space child attribute    ---> If the element does't contains any attribute then we will use first parent attribute then space with child tagname 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Xpath Syntax:
+
+1. //tagname[@attribute='value']
+
+2. //tagname[text()='value']   ---> if tag does't contains any attribute, if test is availabel then we use text().
+
+3. //tagname[contains(@attribute, 'value')] ---> If the attribute valueis large then we use contains().
+
+4. //tagname[@attribute='value']/child tagname / child child tagname/ etc...    ---> If the element does't contains any attribute then we will use first parent attribute then child tagname 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+linkText:
+
+1. driver.find_element_by_link_text('text name')   ----> If the test name is samll then we ll user linkText.
+
+2. driver.find_element_by_partial_link_text('partial text name') ---> If the test name is large the we ll user partial link text.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
